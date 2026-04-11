@@ -11,18 +11,22 @@ export default function Home() {
   const [score, setScore] = useState(0);
 
   // 🔥 데이터 가져오기
+  const fetchQuestions = async () => {
+    const { data, error } = await supabase
+      .from("questions")
+      .select("*");
+
+    if (data) {
+      const shuffled = data.sort(() => 0.5 - Math.random());
+      setQuestions(shuffled.slice(0, 5));
+      setCurrent(0);
+      setSelected(null);
+      setShowExplanation(false);
+      setScore(0);
+    }
+  };
+
   useEffect(() => {
-    const fetchQuestions = async () => {
-      const { data, error } = await supabase
-        .from("questions")
-        .select("*");
-
-      if (data) {
-        const shuffled = data.sort(() => 0.5 - Math.random());
-        setQuestions(shuffled.slice(0, 5));
-      }
-    };
-
     fetchQuestions();
   }, []);
 
@@ -115,11 +119,19 @@ export default function Home() {
                 다음 문제 →
               </button>
             ) : (
-              <div className="mt-3 text-center">
-                <p className="font-bold text-lg">🎉 오늘 결과</p>
-                <p className="text-blue-600 mt-2">
-                  {questions.length}문제 중 {score}개 정답!
-                </p>
+              <div className="mt-3 text-center space-y-3">
+                <div>
+                  <p className="font-bold text-lg">🎉 오늘 결과</p>
+                  <p className="text-blue-600 mt-2">
+                    {questions.length}문제 중 {score}개 정답!
+                  </p>
+                </div>
+                <button
+                  onClick={fetchQuestions}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-green-500 text-white p-2 rounded-xl"
+                >
+                  🔄 또 해보기
+                </button>
               </div>
             )}
           </div>
