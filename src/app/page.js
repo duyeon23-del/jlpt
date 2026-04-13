@@ -80,9 +80,16 @@ export default function Home() {
     return "text-xs sm:text-sm";
   };
 
+  const normalizeMultilineText = (text) => String(text || "").replace(/\\n/g, "\n");
+
   const getQuestionCacheKey = (type, subType) => `${type}::${subType}`;
-  const getPassageCacheKey = (type) => `passage::${type}`;
+  const getPassageCacheKey = (type, subType) => `passage::${type}::${subType}`;
   const getGrammarCacheKey = (type, subType) => `${type}::${subType}`;
+  const getPassageQuestionJoinKey = (groupId, type, subType) => `${groupId}::${type}::${subType || ""}`;
+
+  useEffect(() => {
+    setMode(activeType === "독해" ? "passage" : "single");
+  }, [activeType]);
 
   const getGrammarCorrectIndex = (item) => {
     const numericAnswer = Number(item.answer);
@@ -155,36 +162,50 @@ export default function Home() {
       // 2. PASSAGE MODE (신규)
       // =========================
       if (mode === "passage") {
-        const passageCacheKey = getPassageCacheKey(activeType);
+        const passageCacheKey = getPassageCacheKey(activeType, activeSubType);
         let data = passageCacheRef.current.get(passageCacheKey);
 
         if (!data) {
-          const passagesResult = await supabase
+          let passagesQuery = supabase
             .from("passages")
             .select("id, group_id, content, level, type, sub_type, created_at")
             .eq("type", activeType);
 
+          if (activeSubType !== "랜덤") {
+            passagesQuery = passagesQuery.eq("sub_type", activeSubType);
+          }
+
+          const passagesResult = await passagesQuery;
+
           if (!passagesResult.error && passagesResult.data) {
             const groupIds = [...new Set(passagesResult.data.map((item) => item.group_id).filter(Boolean))];
+            let questionsQuery = supabase
+              .from("passage_questions")
+              .select("id, group_id, type, sub_type, question, blank_number, option1, option2, option3, option4, answer, explanation, created_at")
+              .in("group_id", groupIds)
+              .eq("type", activeType)
+              .order("blank_number", { ascending: true });
+
+            if (activeSubType !== "랜덤") {
+              questionsQuery = questionsQuery.eq("sub_type", activeSubType);
+            }
+
             const { data: questionData } = groupIds.length
-              ? await supabase
-                  .from("passage_questions")
-                  .select("id, group_id, blank_number, option1, option2, option3, option4, answer, explanation, created_at")
-                  .in("group_id", groupIds)
-                  .order("blank_number", { ascending: true })
+              ? await questionsQuery
               : { data: [] };
 
             const questionsByGroup = (questionData || []).reduce((acc, item) => {
-              if (!acc[item.group_id]) {
-                acc[item.group_id] = [];
+              const key = getPassageQuestionJoinKey(item.group_id, item.type, item.sub_type);
+              if (!acc[key]) {
+                acc[key] = [];
               }
-              acc[item.group_id].push(item);
+              acc[key].push(item);
               return acc;
             }, {});
 
             data = passagesResult.data.map((item) => ({
               ...item,
-              passage_questions: questionsByGroup[item.group_id] || [],
+              passage_questions: questionsByGroup[getPassageQuestionJoinKey(item.group_id, item.type, item.sub_type)] || [],
             }));
             passageCacheRef.current.set(passageCacheKey, data);
           } else {
@@ -215,11 +236,15 @@ export default function Home() {
   // 현재 문제 계산
   // =========================
   const passage = passages[passageIndex];
+  const sortedPassageQuestions =
+    mode === "passage"
+      ? [...(passage?.passage_questions || [])].sort((a, b) => Number(a.blank_number) - Number(b.blank_number))
+      : [];
 
   const q =
     mode === "single"
       ? questions[current]
-      : passage?.passage_questions?.[questionIndex];
+      : sortedPassageQuestions[questionIndex];
 
   const options = q ? [q.option1, q.option2, q.option3, q.option4] : [];
   const isGrammarContext = activeType === "문법" && activeSubType === "문맥";
@@ -254,8 +279,10 @@ export default function Home() {
       const { data: questionData, error: questionError } = groupIds.length
         ? await supabase
             .from("passage_questions")
-            .select("id, group_id, blank_number, option1, option2, option3, option4, answer, explanation, created_at")
+            .select("id, group_id, type, sub_type, question, blank_number, option1, option2, option3, option4, answer, explanation, created_at")
             .in("group_id", groupIds)
+            .eq("type", activeType)
+            .eq("sub_type", activeSubType)
             .order("blank_number", { ascending: true })
         : { data: [], error: null };
 
@@ -270,18 +297,19 @@ export default function Home() {
       }
 
       const questionsByGroup = (questionData || []).reduce((acc, item) => {
-        if (!acc[item.group_id]) {
-          acc[item.group_id] = [];
+        const key = getPassageQuestionJoinKey(item.group_id, item.type, item.sub_type);
+        if (!acc[key]) {
+          acc[key] = [];
         }
-        acc[item.group_id].push(item);
+        acc[key].push(item);
         return acc;
       }, {});
 
       cachedGrammarData = allPassagesResult.data.filter(
-        (item) => (questionsByGroup[item.group_id] || []).length > 0
+        (item) => (questionsByGroup[getPassageQuestionJoinKey(item.group_id, activeType, activeSubType)] || []).length > 0
       ).map((item) => ({
         ...item,
-        passage_questions: questionsByGroup[item.group_id] || [],
+        passage_questions: questionsByGroup[getPassageQuestionJoinKey(item.group_id, activeType, activeSubType)] || [],
       }));
 
       grammarContextCacheRef.current.set(grammarCacheKey, cachedGrammarData);
@@ -361,7 +389,7 @@ export default function Home() {
     }
 
     if (mode === "passage") {
-      const qs = passage?.passage_questions || [];
+      const qs = sortedPassageQuestions;
 
       if (questionIndex < qs.length - 1) {
         setQuestionIndex((i) => i + 1);
@@ -412,11 +440,13 @@ export default function Home() {
       />
 
       {/* SUB TYPE */}
-      {(activeType === "문자·어휘" || activeType === "문법") && (
+      {(activeType === "문자·어휘" || activeType === "문법" || activeType === "독해") && (
         <div className="mb-4 flex w-full max-w-md snap-x snap-mandatory gap-2 overflow-x-auto pb-1 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {(activeType === "문법"
             ? ["랜덤", "판단", "배열", "문맥"]
-            : ["랜덤", "한자 읽기", "표기", "문맥 규정"]
+            : activeType === "독해"
+              ? ["랜덤", "단문독해", "중문독해", "정보검색"]
+              : ["랜덤", "한자 읽기", "표기", "문맥 규정"]
           ).map((sub) => (
             <button
               key={sub}
@@ -436,7 +466,7 @@ export default function Home() {
       {/* PASSAGE UI (🔥 핵심 추가) */}
       {mode === "passage" && (
         <div className="mb-4 w-full max-w-md rounded-[24px] border border-slate-200 bg-white px-4 py-4 text-[15px] leading-7 whitespace-pre-line shadow-[0_18px_40px_rgba(15,23,42,0.06)]">
-          {passage?.content}
+          {normalizeMultilineText(passage?.content)}
         </div>
       )}
 
@@ -449,10 +479,10 @@ export default function Home() {
               <span />
             </div>
 
-            <div className="mb-4 rounded-[24px] border-[3px] border-blue-500 bg-gradient-to-b from-white to-blue-50/30 px-4 py-4 text-[15px] leading-8 whitespace-pre-line text-slate-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)] sm:px-5">
+            <div className="mb-4 rounded-[24px] border border-slate-200 bg-white px-4 py-4 text-[15px] leading-8 whitespace-pre-line text-slate-800 shadow-[0_10px_25px_rgba(15,23,42,0.05)] sm:px-5">
               {grammarContextLoading
                 ? "데이터를 불러오는 중입니다..."
-                : grammarContextContent || "데이터 준비중입니다"}
+                : normalizeMultilineText(grammarContextContent) || "데이터 준비중입니다"}
             </div>
 
             {grammarContextLoading ? null : grammarContextQuestions.length > 0 ? (
@@ -547,7 +577,7 @@ export default function Home() {
                   </span>
                 ))
               ) : (
-                <span>빈칸 {q.blank_number}</span>
+                <span>{`${q.blank_number}. ${q.question || `빈칸 ${q.blank_number}`}`}</span>
               )}
             </div>
 
