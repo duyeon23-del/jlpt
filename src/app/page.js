@@ -30,6 +30,7 @@ export default function Home() {
   const [showExplanation, setShowExplanation] = useState(false);
   const [score, setScore] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [retryNonce, setRetryNonce] = useState(0);
 
   const [activeType, setActiveType] = useState("문자·어휘");
   const [activeSubType, setActiveSubType] = useState("랜덤");
@@ -230,7 +231,7 @@ export default function Home() {
     };
 
     fetchData();
-  }, [mode, activeType, activeSubType]);
+  }, [mode, activeType, activeSubType, retryNonce]);
 
   // =========================
   // 현재 문제 계산
@@ -248,6 +249,11 @@ export default function Home() {
 
   const options = q ? [q.option1, q.option2, q.option3, q.option4] : [];
   const isGrammarContext = activeType === "문법" && activeSubType === "문맥";
+  const isLastSingleQuestion = mode === "single" && current === questions.length - 1;
+  const isLastPassageQuestion =
+    mode === "passage" &&
+    passageIndex === passages.length - 1 &&
+    questionIndex === sortedPassageQuestions.length - 1;
   const allGrammarQuestionsAnswered =
     grammarContextQuestions.length > 0 &&
     grammarContextQuestions.every((item) => Boolean(grammarSelections[item.id]));
@@ -384,7 +390,7 @@ export default function Home() {
       if (current < questions.length - 1) {
         setCurrent((c) => c + 1);
       } else {
-        window.location.reload();
+        return;
       }
     }
 
@@ -398,13 +404,26 @@ export default function Home() {
           setPassageIndex((p) => p + 1);
           setQuestionIndex(0);
         } else {
-          window.location.reload();
+          return;
         }
       }
     }
 
     setSelected(null);
     setShowExplanation(false);
+  };
+
+  const handleRetryCurrentSet = () => {
+    setSelected(null);
+    setShowExplanation(false);
+    if (mode === "single") {
+      setCurrent(0);
+    }
+    if (mode === "passage") {
+      setPassageIndex(0);
+      setQuestionIndex(0);
+    }
+    setRetryNonce((n) => n + 1);
   };
 
   // =========================
@@ -624,12 +643,21 @@ export default function Home() {
                   💡 {q.explanation}
                 </div>
 
-                <button
-                  onClick={goNext}
-                  className="min-h-[54px] w-full rounded-2xl bg-blue-600 p-3 text-white shadow-[0_16px_40px_rgba(37,99,235,0.28)] transition active:scale-[0.99]"
-                >
-                  다음
-                </button>
+                {isLastSingleQuestion || isLastPassageQuestion ? (
+                  <button
+                    onClick={handleRetryCurrentSet}
+                    className="min-h-[54px] w-full rounded-2xl bg-blue-600 p-3 text-white shadow-[0_16px_40px_rgba(37,99,235,0.28)] transition active:scale-[0.99]"
+                  >
+                    5문항 Done! Try again?
+                  </button>
+                ) : (
+                  <button
+                    onClick={goNext}
+                    className="min-h-[54px] w-full rounded-2xl bg-blue-600 p-3 text-white shadow-[0_16px_40px_rgba(37,99,235,0.28)] transition active:scale-[0.99]"
+                  >
+                    다음
+                  </button>
+                )}
               </div>
             )}
           </>
