@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:push": "supabase db push",
+    "db:apply:skill-rules": "node scripts/run-sql-file.mjs supabase/migrations/20260415120000_add_skill_rules_and_auto_backfill_map.sql",
+    "db:verify:skill-map": "node scripts/run-sql-file.mjs supabase/verify_skill_map_after_load.sql",
+    "db:push:verify": "supabase db push && node scripts/run-sql-file.mjs supabase/verify_skill_map_after_load.sql"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",
