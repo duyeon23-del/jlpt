@@ -49,6 +49,19 @@ alter table public.user_targets enable row level security;
 alter table public.user_section_stats enable row level security;
 alter table public.study_sessions enable row level security;
 
+-- Drop existing policies to keep this migration re-runnable.
+drop policy if exists "Users can view own data" on public.users;
+drop policy if exists "Users can insert own data" on public.users;
+drop policy if exists "Users can update own data" on public.users;
+drop policy if exists "Users can view own targets" on public.user_targets;
+drop policy if exists "Users can insert own targets" on public.user_targets;
+drop policy if exists "Users can update own targets" on public.user_targets;
+drop policy if exists "Users can view own stats" on public.user_section_stats;
+drop policy if exists "Users can insert own stats" on public.user_section_stats;
+drop policy if exists "Users can update own stats" on public.user_section_stats;
+drop policy if exists "Users can view own sessions" on public.study_sessions;
+drop policy if exists "Users can insert own sessions" on public.study_sessions;
+
 -- Create RLS policies for users
 create policy "Users can view own data"
   on public.users for select
