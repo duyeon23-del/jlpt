@@ -1,11 +1,9 @@
 
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { useUser } from "@/lib/useUser";
 import Onboarding from "@/components/Onboarding";
-import { useRouter } from "next/navigation";
 
 const DASHBOARD_PRIORITY_WEIGHTS = {
   weakness: 1.0,
@@ -13,9 +11,7 @@ const DASHBOARD_PRIORITY_WEIGHTS = {
   lowAccuracyVolume: 0.08,
 };
 
-
 export default function Home() {
-  const router = useRouter();
 
   // =========================
   // MODE (핵심 추가)
@@ -1558,17 +1554,18 @@ export default function Home() {
     <div className="min-h-screen bg-[linear-gradient(180deg,#edf5ff_0%,#f8fbff_55%,#eef4ff_100%)] px-3 py-4 text-slate-900 sm:px-4 sm:py-6">
       <div className="mx-auto flex w-full max-w-md flex-col items-center">
 
-      {/* TITLE */}
-      <div className="mb-3 flex w-full items-center justify-between rounded-2xl border border-white/70 bg-white/85 px-3 py-2 shadow-[0_10px_30px_rgba(37,99,235,0.08)] backdrop-blur">
-        <div className="flex items-center gap-2">
+      {/* TITLE + FEEDBACK BUTTON */}
+      <div className="mb-3 flex w-full items-center justify-between rounded-2xl border border-white/70 bg-white/85 px-3 py-2 shadow-[0_10px_30px_rgba(37,99,235,0.08)] backdrop-blur whitespace-nowrap gap-2">
+        <div className="flex items-center gap-2 min-w-0">
           <button
-            onClick={() => router.push("/FeedbackPage")}
-            className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700 transition hover:bg-amber-100 active:scale-[0.98]"
-            style={{ minWidth: 80 }}
+            onClick={() => { window.location.href = '/feedback'; }}
+            className="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-black text-amber-700 transition hover:bg-amber-100 active:scale-[0.98]"
+            style={{ flexShrink: 0 }}
+            aria-label="피드백 남기기"
           >
-            피드백 남기기
+            피드백
           </button>
-          <h1 className="text-[1.5rem] font-black tracking-[-0.02em] text-blue-700 sm:text-[1.6rem] ml-2">
+          <h1 className="text-[1.5rem] font-black tracking-[-0.02em] text-blue-700 sm:text-[1.6rem] min-w-0 truncate">
             🌸 나만의 JLPT 연습
           </h1>
         </div>

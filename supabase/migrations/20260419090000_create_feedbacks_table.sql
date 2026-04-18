@@ -1,5 +1,5 @@
--- 피드백 저장용 테이블
-create table if not exists public.user_feedbacks (
+-- 사용자 피드백 저장용 테이블
+create table if not exists public.feedbacks (
   id bigserial primary key,
   user_id uuid,
   feedback_text text not null,
