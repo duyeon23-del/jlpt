@@ -1,0 +1,302 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_05_set_01",
+    "difficulty": 1,
+    "recommendation_weight": 0.85,
+    "content": "私は毎朝パンを食べます。朝ごはんのとき牛乳も飲みます。パンはとてもおいしいです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "私は毎朝パンを____。",
+        "option1": "食べます",
+        "option2": "読みます",
+        "option3": "書きます",
+        "option4": "行きます",
+        "answer": 1,
+        "explanation": "지문에서 아침마다 빵을 먹는다고 했으므로 '食べます'가 맞습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.85
+      },
+      {
+        "blank_number": 2,
+        "question": "朝ごはんのとき、牛乳も____。",
+        "option1": "飲みます",
+        "option2": "買います",
+        "option3": "作ります",
+        "option4": "読みます",
+        "answer": 1,
+        "explanation": "지문에 '牛乳も飲みます'로 언급되어 있습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 3,
+        "question": "パンはとても____です。",
+        "option1": "おいしい",
+        "option2": "むずかしい",
+        "option3": "たかい",
+        "option4": "ふるい",
+        "answer": 1,
+        "explanation": "빵이 맛있다고 했으니 'おいしい'가 정답입니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.8
+      },
+      {
+        "blank_number": 4,
+        "question": "この文の主な話題は____です。",
+        "option1": "朝ごはん",
+        "option2": "夜ごはん",
+        "option3": "お母さん",
+        "option4": "学校",
+        "answer": 1,
+        "explanation": "지문 내용이 전부 아침 식사에 관한 내용입니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.85
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_05_set_02",
+    "difficulty": 3,
+    "recommendation_weight": 1.05,
+    "content": "日曜日に友だちと公園へ行きました。天気がよかったので、みんなでサッカーをしました。そのあと、アイスクリームを食べました。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "友だちと____へ行きました。",
+        "option1": "公園",
+        "option2": "駅",
+        "option3": "学校",
+        "option4": "病院",
+        "answer": 1,
+        "explanation": "지문 첫 문장에서 친구와 공원에 갔다고 했습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 2,
+        "question": "天気が____のでサッカーをしました。",
+        "option1": "よかった",
+        "option2": "わるかった",
+        "option3": "さむかった",
+        "option4": "あぶなかった",
+        "answer": 1,
+        "explanation": "'天気がよかったので'가 사커를 한 이유입니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.1
+      },
+      {
+        "blank_number": 3,
+        "question": "そのあと、みんなで____を食べました。",
+        "option1": "アイスクリーム",
+        "option2": "ケーキ",
+        "option3": "すし",
+        "option4": "おにぎり",
+        "answer": 1,
+        "explanation": "지문에서 사커 후 아이스크림을 먹었다고 되어 있습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1
+      },
+      {
+        "blank_number": 4,
+        "question": "この文章の出来事は____ですか。",
+        "option1": "日曜日",
+        "option2": "月曜日",
+        "option3": "金曜日",
+        "option4": "土曜日",
+        "answer": 1,
+        "explanation": "본문 첫 문장에서 '日曜日に'로 시작합니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.05
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_05_set_03",
+    "difficulty": 3,
+    "recommendation_weight": 1.15,
+    "content": "けさはバスが遅くきました。私は学校に遅れそうになりました。でも、先生はやさしかったです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "バスは____きました。",
+        "option1": "遅く",
+        "option2": "早く",
+        "option3": "うるさく",
+        "option4": "しずかに",
+        "answer": 1,
+        "explanation": "지문에 'バスが遅くきました'라고 되어 있습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.15
+      },
+      {
+        "blank_number": 2,
+        "question": "私は学校に____そうになりました。",
+        "option1": "遅れ",
+        "option2": "帰り",
+        "option3": "来",
+        "option4": "出",
+        "answer": 1,
+        "explanation": "'遅れそうになりました'에서 '遅れ'가 필요합니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.2
+      },
+      {
+        "blank_number": 3,
+        "question": "先生はとても____です。",
+        "option1": "やさしい",
+        "option2": "きびしい",
+        "option3": "かなしい",
+        "option4": "おもしろい",
+        "answer": 1,
+        "explanation": "'先生はやさしかったです'에서 'やさしい'가 올바릅니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.1
+      },
+      {
+        "blank_number": 4,
+        "question": "この文章で問題だったことは____です。",
+        "option1": "バスが遅れた",
+        "option2": "朝ごはんがなかった",
+        "option3": "雨がふった",
+        "option4": "友だちがいない",
+        "answer": 1,
+        "explanation": "본 문장에서 문제로 언급된 것은 'バスが遅くきました'입니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.12
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_05_set_04",
+    "difficulty": 5,
+    "recommendation_weight": 1.23,
+    "content": "日本で春になると、さくらの花が咲きます。多くの人が公園で花見をします。家族や友だちと一緒にお弁当を食べながら、きれいな花を楽しみます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "春になると、____が咲きます。",
+        "option1": "さくら",
+        "option2": "ひまわり",
+        "option3": "ばら",
+        "option4": "き",
+        "answer": 1,
+        "explanation": "지문에 봄이 되면 핀다는 꽃은 'さくら'입니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.23
+      },
+      {
+        "blank_number": 2,
+        "question": "人々は公園で____をします。",
+        "option1": "花見",
+        "option2": "うた",
+        "option3": "買い物",
+        "option4": "さんぽ",
+        "answer": 1,
+        "explanation": "'花見をします'가 맞는 표현입니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.2
+      },
+      {
+        "blank_number": 3,
+        "question": "みんなで____を食べながら、花を楽しんでいます。",
+        "option1": "お弁当",
+        "option2": "朝ごはん",
+        "option3": "ラーメン",
+        "option4": "パン",
+        "answer": 1,
+        "explanation": "'お弁当を食べながら'에서 'お弁当'가 정답입니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
+      },
+      {
+        "blank_number": 4,
+        "question": "この文章はどんな時期のことを話していますか。____",
+        "option1": "春",
+        "option2": "夏",
+        "option3": "秋",
+        "option4": "冬",
+        "answer": 1,
+        "explanation": "지문 처음에 '春になると' 이라 명시되어 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.22
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_05_set_05",
+    "difficulty": 3,
+    "recommendation_weight": 1,
+    "content": "昨日、母とスーパーへ行きました。たくさんのくだものを買いました。私の好きなりんごも買いました。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "昨日、____とスーパーへ行きました。",
+        "option1": "母",
+        "option2": "父",
+        "option3": "先生",
+        "option4": "兄",
+        "answer": 1,
+        "explanation": "지문에서 엄마와 슈퍼에 간 것으로 나옵니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1
+      },
+      {
+        "blank_number": 2,
+        "question": "たくさんの____を買いました。",
+        "option1": "くだもの",
+        "option2": "本",
+        "option3": "ふく",
+        "option4": "おかし",
+        "answer": 1,
+        "explanation": "'たくさんのくだもの'가 나오므로 과일이 정답입니다.",
+        "difficulty": 3,
+        "recommendation_weight": 0.98
+      },
+      {
+        "blank_number": 3,
+        "question": "私の好きな____も買いました。",
+        "option1": "りんご",
+        "option2": "みかん",
+        "option3": "バナナ",
+        "option4": "なし",
+        "answer": 1,
+        "explanation": "지문에서 '私の好きなりんごも買いました'가 정답입니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.02
+      },
+      {
+        "blank_number": 4,
+        "question": "この文章で買わなかったものはどれですか。____",
+        "option1": "ふく",
+        "option2": "くだもの",
+        "option3": "りんご",
+        "option4": "みかん",
+        "answer": 1,
+        "explanation": "본문에서는 'ふく'는 언급되어 있지 않습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1
+      }
+    ]
+  }
+]

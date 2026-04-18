@@ -1,0 +1,14 @@
+# Supabase Configuration
+project_id = "ssflbxgjhrknaruozjjy"
+
+[api]
+enabled = true
+
+[db]
+major_version = 15
+
+[realtime]
+enabled = true
+
+[auth]
+enabled = true

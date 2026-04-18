@@ -1,11 +1,25 @@
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
+import dotenv from "dotenv";
 
-const sqlFile = process.argv[2];
+dotenv.config({ path: resolve(process.cwd(), ".env.local"), override: true });
+dotenv.config({ path: resolve(process.cwd(), ".env"), override: true });
+
+
+// Usage: node scripts/run-sql-file.mjs <sql-file-path> [--out <output-file>]
+const args = process.argv.slice(2);
+const sqlFile = args[0];
+let outFile = null;
+for (let i = 1; i < args.length; ++i) {
+  if (args[i] === '--out' && args[i + 1]) {
+    outFile = args[i + 1];
+    i++;
+  }
+}
 
 if (!sqlFile) {
-  console.error("Usage: node scripts/run-sql-file.mjs <sql-file-path>");
+  console.error("Usage: node scripts/run-sql-file.mjs <sql-file-path> [--out <output-file>]");
   process.exit(1);
 }
 
@@ -49,12 +63,31 @@ const resolvePsqlCommand = () => {
 
 const psqlCommand = resolvePsqlCommand();
 
-const child = spawn(psqlCommand, [dbUrl, "-v", "ON_ERROR_STOP=1", "-f", absoluteSqlFile], {
-  env: {
-    ...process.env,
-    PGCLIENTENCODING: process.env.PGCLIENTENCODING || "UTF8",
-  },
-  stdio: "inherit",
+const env = {
+  ...process.env,
+  PGCLIENTENCODING: process.env.PGCLIENTENCODING || "UTF8",
+};
+
+const psqlArgs = [dbUrl, "-v", "ON_ERROR_STOP=1", "-v", "client_encoding=UTF8", "-f", absoluteSqlFile];
+
+if (process.platform === "win32") {
+  spawnSync("cmd.exe", ["/d", "/s", "/c", "chcp 65001>nul"], {
+    stdio: "ignore",
+  });
+}
+
+let stdio;
+if (outFile) {
+  const fs = require("fs");
+  const outStream = fs.createWriteStream(outFile, { encoding: "utf8" });
+  stdio = ["inherit", outStream, "inherit"];
+} else {
+  stdio = "inherit";
+}
+
+const child = spawn(psqlCommand, psqlArgs, {
+  env,
+  stdio,
 });
 
 child.on("exit", (code) => {

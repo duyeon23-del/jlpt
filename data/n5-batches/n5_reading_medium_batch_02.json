@@ -1,0 +1,162 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_02_set_01",
+    "content": "私の 友達の 鈴木さんは 去年 大阪の 大学へ 入学しました。今 毎日 寮で 生活しています。朝 6時に 起きて、夜 10時に 寝ます。勉強が 厳しいですが、毎日 頑張っています。夏休みに は 帰省して、両親と 過ごしたいと 言っています。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "鈴木さんは いつ 大学へ 入学しましたか。",
+        "option1": "一昨年",
+        "option2": "去年",
+        "option3": "今年",
+        "option4": "来年",
+        "answer": 2,
+        "explanation": "지문에 '去年大阪の大学へ入学しました'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "鈴木さんは 今 どこで 生活していますか。",
+        "option1": "実家",
+        "option2": "寮",
+        "option3": "アパート",
+        "option4": "新しい 家",
+        "answer": 2,
+        "explanation": "지문에 '今毎日寮で生活しています'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 3,
+        "question": "鈴木さんは 夏休みに 何を したいと 言っていますか。",
+        "option1": "旅行に 行く",
+        "option2": "勉強を 続ける",
+        "option3": "帰省して、両親と 過ごす",
+        "option4": "友達に 会う",
+        "answer": 3,
+        "explanation": "지문에 '夏休みには帰省して、両親と過ごしたいと言っています'라고 나와 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_02_set_02",
+    "content": "田中さんは 新しい 仕事に 変わりました。給料が 少し 上がりました。が、仕事が とても 忙しいです。毎日 残業が あります。疲れていますが、新しい スキルを 学んでいるので 良いと思っています。同僚も みんな 友達です。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "田中さんは 新しい 仕事に 変わって、給料は どうなりましたか。",
+        "option1": "少し 上がった",
+        "option2": "少し 下がった",
+        "option3": "変わらない",
+        "option4": "大きく 上がった",
+        "answer": 1,
+        "explanation": "지문에 '給料が少し上がりました'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "新しい 仕事の 欠点は 何ですか。",
+        "option1": "給料が 低い",
+        "option2": "仕事が つまらない",
+        "option3": "仕事が とても 忙しい",
+        "option4": "同僚が 冷たい",
+        "answer": 3,
+        "explanation": "지문에 '仕事がとても忙しいです。毎日残業があります'라고 나와 있다."
+      },
+      {
+        "blank_number": 3,
+        "question": "田中さんは 新しい 仕事を どう 思っていますか。",
+        "option1": "つらい だけだ",
+        "option2": "つらいが、良いと 思っている",
+        "option3": "簡単だ",
+        "option4": "すぐに やめたい",
+        "answer": 2,
+        "explanation": "지문에 '疲れていますが、新しいスキルを学んでいるので良いと思っています'라고 명시되어 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_02_set_03",
+    "content": "佐藤さんは 毎年 春に 京都へ 花見に 行きます。京都は 桜が とてもきれいです。旅館で 温泉に 入ります。食事も おいしいです。今年も 3月の 最後の 週に 行く予定です。友達も 一緒に 行きたいと 言っています。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "佐藤さんは 毎年 いつ 京都へ 行きますか。",
+        "option1": "冬",
+        "option2": "春",
+        "option3": "夏",
+        "option4": "秋",
+        "answer": 2,
+        "explanation": "지문에 '毎年春に京都へ花見に行きます'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "京都の 旅館では 何が できますか。",
+        "option1": "山登り",
+        "option2": "買い物",
+        "option3": "温泉に 入る",
+        "option4": "映画を 見る",
+        "answer": 3,
+        "explanation": "지문에 '旅館で温泉に入ります'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 3,
+        "question": "今年も 何月 に 京都へ 行く予定ですか。",
+        "option1": "2月",
+        "option2": "3月 の 始め",
+        "option3": "3月 の 最後",
+        "option4": "4月",
+        "answer": 3,
+        "explanation": "지문에 '今年も3月の最後の週に行く予定です'라고 명시되어 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "중문독해",
+    "group_key": "n5_reading_medium_batch_02_set_04",
+    "content": "山田さんは 有名な レストラン の シェフです。毎日 朝 5時に 起きて、市場へ 行って 新鮮な材料を 買います。調理法も 工夫しています。そのため、彼の レストラン の 料理は とても 人気があります。多くの 人が 毎日 食事に 来て います。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "山田さんの 職業は 何ですか。",
+        "option1": "医者",
+        "option2": "教師",
+        "option3": "シェフ",
+        "option4": "エンジニア",
+        "answer": 3,
+        "explanation": "지문에 '山田さんは有名なレストランのシェフです'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "山田さんは 毎日 何時に 起きますか。",
+        "option1": "3時",
+        "option2": "4時",
+        "option3": "5時",
+        "option4": "6時",
+        "answer": 3,
+        "explanation": "지문에 '毎日朝5時に起きて'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 3,
+        "question": "彼の レストランの 料理が 人気があるのは なぜですか。",
+        "option1": "安い",
+        "option2": "新鮮な材料を 使い、調理法も 工夫している",
+        "option3": "有名だから",
+        "option4": "近いから",
+        "answer": 2,
+        "explanation": "지문에 '新鮮な材料を買います。調理法も工夫しています。そのため、料理はとても人気があります'라고 나와 있다."
+      }
+    ]
+  }
+]

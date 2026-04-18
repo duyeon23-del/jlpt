@@ -1,0 +1,252 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_02_set_01",
+    "content": "たなかさんは 高校生です。毎日 学校へ 行っています。今日は 数学の テストが あります。朝 7時半に 起きて、朝ごはんを 食べてから 学校へ 行きました。中休みに ともだちと 話します。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "たなかさんは 毎日 学校へ ____。",
+        "option1": "いきます",
+        "option2": "いきました",
+        "option3": "いって",
+        "option4": "いく",
+        "answer": 1,
+        "explanation": "지문에 毎日 (매일) 있으므로 습관을 나타내는 いきます 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "朝 7時半に ____ 、朝ごはんを 食べてから 学校へ 行きました。",
+        "option1": "おきます",
+        "option2": "おきました",
+        "option3": "おきて",
+        "option4": "おきる",
+        "answer": 2,
+        "explanation": "지문이 과거 상황(行きました)이므로 과거형 おきました 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "今日は 数学の テストが ____。",
+        "option1": "あります",
+        "option2": "あった",
+        "option3": "あって",
+        "option4": "あるでしょう",
+        "answer": 1,
+        "explanation": "현재의 상황이므로 있다는 의미의 あります 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "中休みに ともだちと ____。",
+        "option1": "はなします",
+        "option2": "はなしました",
+        "option3": "はなして",
+        "option4": "はなしている",
+        "answer": 1,
+        "explanation": "중간 휴식 시간에 인사를 하는 일반적인 행동이므로 비과거형 はなします 가 자연스럽다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_02_set_02",
+    "content": "きのう わたしは あに と レストランへ 行きました。わたしは ラーメンを 注文しました。あに は カレーを 注文して、食べました。おいしかったので、また 行きたいです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "きのう わたしは あに と レストランへ ____。",
+        "option1": "いきます",
+        "option2": "いきました",
+        "option3": "いって",
+        "option4": "いく",
+        "answer": 2,
+        "explanation": "きのう (어제) 있으므로 과거형 いきました 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "わたしは ラーメンを ____。",
+        "option1": "たべます",
+        "option2": "ちゅうもんします",
+        "option3": "ちゅうもんしました",
+        "option4": "たべました",
+        "answer": 3,
+        "explanation": "지문이 과거이고, 라면을 주문했다는 의미이므로 ちゅうもんしました 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "あに は カレーを ____、食べました。",
+        "option1": "ちゅうもんして",
+        "option2": "ちゅうもんする",
+        "option3": "ちゅうもんした",
+        "option4": "ちゅうもんします",
+        "answer": 1,
+        "explanation": "두 동작(주문하고 먹었다)을 자연스럽게 잇기 위해 て형 ちゅうもんして 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "おいしかった ので 、また 行き ____。",
+        "option1": "たいです",
+        "option2": "ます",
+        "option3": "ました",
+        "option4": "ている",
+        "answer": 1,
+        "explanation": "향후 소망을 나타내므로 たい (~하고 싶다) 형태와 です를 붙여 たいです 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_02_set_03",
+    "content": "来月 ハワイへ 旅行します。飛行機 で 行きます。ホテルの 予約を しました。ビーチで 泳ぎたいです。時間が あれば 山にも 登りたいです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "来月 ハワイへ ____。",
+        "option1": "りょこうします",
+        "option2": "りょこうしました",
+        "option3": "りょこうしている",
+        "option4": "りょこうしたい",
+        "answer": 1,
+        "explanation": "미래 계획이므로 비과거형 りょこうします 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "飛行機で ____。",
+        "option1": "いきます",
+        "option2": "のります",
+        "option3": "かえります",
+        "option4": "あるきます",
+        "answer": 1,
+        "explanation": "목적지로 가다는 의미이므로 いきます 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "ホテルの 予約を ____。",
+        "option1": "します",
+        "option2": "しました",
+        "option3": "している",
+        "option4": "したい",
+        "answer": 2,
+        "explanation": "이미 예약한 과거의 사실이므로 しました 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "時間が あれば 山にも ____。",
+        "option1": "のぼります",
+        "option2": "のぼりたいです",
+        "option3": "のぼった",
+        "option4": "のぼっている",
+        "answer": 2,
+        "explanation": "조건부 미래 소망을 나타내므로 たいです 형태의 のぼりたいです 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_02_set_04",
+    "content": "あした 美術の 授業が あります。先生は 絵を 描くことを 教えています。みんな 楽しく 勉強しています。わたしは 絵が 下手ですが、頑張ります。友達と 一緒に 勉強しましょう。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "あした 美術の 授業が ____。",
+        "option1": "あります",
+        "option2": "あった",
+        "option3": "あって",
+        "option4": "あるでしょう",
+        "answer": 1,
+        "explanation": "명일 예정된 일이므로 있다는 의미의 あります 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "先生は 絵を ____ことを 教えています。",
+        "option1": "かきます",
+        "option2": "かきましょう",
+        "option3": "かく",
+        "option4": "かいた",
+        "answer": 3,
+        "explanation": "명사구를 만들기 위해 기본형 かく 를 사용한다."
+      },
+      {
+        "blank_number": 3,
+        "question": "みんな 楽しく 勉強 ____。",
+        "option1": "しています",
+        "option2": "しました",
+        "option3": "しますよ",
+        "option4": "している",
+        "answer": 1,
+        "explanation": "현재 진행 중인 상태를 나타내므로 しています 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "友達と 一緒に 勉強 ____。",
+        "option1": "しましょう",
+        "option2": "した",
+        "option3": "しても",
+        "option4": "しなければ",
+        "answer": 1,
+        "explanation": "제안과 권유를 나타내므로 ましょう 형태의 しましょう 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_02_set_05",
+    "content": "日曜日 にどなたが おうちへ 来ました。わたしは お母さんと 一緒に 料理を 準備しました。おじさんと おばさんと 楽しく 食べました。来週も 来たいって 言っていました。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "日曜日に だれが おうちへ ____。",
+        "option1": "きました",
+        "option2": "きます",
+        "option3": "くる",
+        "option4": "きて",
+        "answer": 1,
+        "explanation": "日曜日 (지난 일요일) 의 과거 사실이므로 きました 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "わたしは お母さんと 一緒に 料理を ____。",
+        "option1": "たべました",
+        "option2": "じゅんびしました",
+        "option3": "つくりました",
+        "option4": "たべます",
+        "answer": 2,
+        "explanation": "요리를 준비했다는 의미이므로 じゅんびしました 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "おじさんと おばさんと 楽しく ____。",
+        "option1": "たべました",
+        "option2": "すいました",
+        "option3": "のみました",
+        "option4": "あそびました",
+        "answer": 1,
+        "explanation": "주위의 음식 준비 맥락에서 함께 먹었다는 의미이므로 たべました 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "来週も 来たいって ____。",
+        "option1": "いっていました",
+        "option2": "いいました",
+        "option3": "いっています",
+        "option4": "いった",
+        "answer": 1,
+        "explanation": "과거에 남긴 말이므로 과거 진행형 いっていました 가 맞다."
+      }
+    ]
+  }
+]

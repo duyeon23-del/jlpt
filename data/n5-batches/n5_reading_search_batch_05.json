@@ -1,0 +1,242 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "정보검색",
+    "group_key": "n5_reading_search_batch_05_set_01",
+    "difficulty": 1,
+    "recommendation_weight": 0.9,
+    "content": "コンビニはあさ6時からよる11時まであいています。やさいやパン、おにぎりも売っています。店の前にはじてんしゃをとめるところがあります。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "コンビニは何時からあいていますか。____",
+        "option1": "6時",
+        "option2": "7時",
+        "option3": "8時",
+        "option4": "9時",
+        "answer": 1,
+        "explanation": "지문에서 'あさ6時から'라고 되어 있어 정답은 6시입니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 2,
+        "question": "この店の前にあるものは何ですか。____",
+        "option1": "じてんしゃをとめるところ",
+        "option2": "バスてい",
+        "option3": "公園",
+        "option4": "タクシーのりば",
+        "answer": 1,
+        "explanation": "'店の前にはじてんしゃをとめるところがあります。'가 정답을 알려줍니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 3,
+        "question": "コンビニで売っていないものは何ですか。____",
+        "option1": "さかな",
+        "option2": "やさい",
+        "option3": "パン",
+        "option4": "おにぎり",
+        "answer": 1,
+        "explanation": "지문에는 'やさい、パン、おにぎり'만 나오며, 'さかな'는 언급이 없습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 4,
+        "question": "コンビニはよる何時まであいていますか。____",
+        "option1": "11時",
+        "option2": "10時",
+        "option3": "12時",
+        "option4": "9時",
+        "answer": 1,
+        "explanation": "지문에서 'よる11時まで'라고 명확하게 나와 있습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "정보검색",
+    "group_key": "n5_reading_search_batch_05_set_02",
+    "difficulty": 4,
+    "recommendation_weight": 1.18,
+    "content": "田中さんはまいにち8時に会社に行きます。お昼は12時から1時までです。かいしゃの近くに安くておいしいレストランがあります。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "田中さんは何時に会社に____。",
+        "option1": "行きます",
+        "option2": "帰ります",
+        "option3": "来ます",
+        "option4": "出ます",
+        "answer": 1,
+        "explanation": "지문에 '8時に会社に行きます'라고 되어 있으므로 정답입니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.18
+      },
+      {
+        "blank_number": 2,
+        "question": "田中さんのお昼は____からですか。",
+        "option1": "12時",
+        "option2": "11時",
+        "option3": "1時",
+        "option4": "2時",
+        "answer": 1,
+        "explanation": "지문에 'お昼は12時から1時までです'라고 나옵니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.18
+      },
+      {
+        "blank_number": 3,
+        "question": "会社の近くにあるレストランはどうですか。____",
+        "option1": "安くておいしい",
+        "option2": "高くてまずい",
+        "option3": "新しい",
+        "option4": "きれい",
+        "answer": 1,
+        "explanation": "내용에 '安くておいしい'라고 나와 있습니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.18
+      },
+      {
+        "blank_number": 4,
+        "question": "田中さんはまいにち何時に会社に行きますか。____",
+        "option1": "8時",
+        "option2": "9時",
+        "option3": "7時",
+        "option4": "10時",
+        "answer": 1,
+        "explanation": "지문에 'まいにち8時に会社に行きます'라고 명시되어 있습니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.18
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "정보검색",
+    "group_key": "n5_reading_search_batch_05_set_03",
+    "difficulty": 5,
+    "recommendation_weight": 1.23,
+    "content": "山田さんの家は学校から近いです。でも、バスで行きます。朝、7時に家を出て、7時15分のバスにのります。土曜日と日曜日は学校がありません。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "山田さんはがっこうへ何で行きますか。____",
+        "option1": "バス",
+        "option2": "じてんしゃ",
+        "option3": "くるま",
+        "option4": "あるいて",
+        "answer": 1,
+        "explanation": "지문에 'バスで行きます'라고 나와 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.23
+      },
+      {
+        "blank_number": 2,
+        "question": "山田さんはいつ家を出ますか。____",
+        "option1": "7時",
+        "option2": "7時15分",
+        "option3": "6時",
+        "option4": "8時",
+        "answer": 1,
+        "explanation": "'朝、7時に家を出て'라고 지문에 나와 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.23
+      },
+      {
+        "blank_number": 3,
+        "question": "バスは何時に出ますか。____",
+        "option1": "7時15分",
+        "option2": "7時",
+        "option3": "7時30分",
+        "option4": "8時",
+        "answer": 1,
+        "explanation": "지문에서 '7時15分のバスにのります'라는 정보를 찾을 수 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.23
+      },
+      {
+        "blank_number": 4,
+        "question": "山田さんは土曜日と日曜日、学校がありますか。____",
+        "option1": "いいえ、ありません",
+        "option2": "はい、あります",
+        "option3": "いつもあります",
+        "option4": "わかりません",
+        "answer": 1,
+        "explanation": "지문 마지막 문장에 '土曜日と日曜日は学校がありません'라고 명확하게 적혀 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.23
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "정보검색",
+    "group_key": "n5_reading_search_batch_05_set_04",
+    "difficulty": 4,
+    "recommendation_weight": 1.05,
+    "content": "午後2時から図書館のそうじをします。おさらや本をきちんと並べてください。本は9時までかりることができます。月曜日は休みです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "図書館のそうじはいつしますか。____",
+        "option1": "午後2時から",
+        "option2": "午前9時から",
+        "option3": "午後5時から",
+        "option4": "午前11時から",
+        "answer": 1,
+        "explanation": "지문 처음에 '午後2時から図書館のそうじをします'라고 나와 있습니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 2,
+        "question": "本を並べるとき、どうしますか。____",
+        "option1": "きちんと並べる",
+        "option2": "たくさん並べる",
+        "option3": "高く並べる",
+        "option4": "早く並べる",
+        "answer": 1,
+        "explanation": "지문에 'きちんと並べてください'라고 쓰여 있습니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 3,
+        "question": "本はいつまでかりることができますか。____",
+        "option1": "9時まで",
+        "option2": "2時まで",
+        "option3": "12時まで",
+        "option4": "8時まで",
+        "answer": 1,
+        "explanation": "내용상 '本は9時までかりることができます'가 정답입니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 4,
+        "question": "図書館は何曜日に休みですか。____",
+        "option1": "月曜日",
+        "option2": "土曜日",
+        "option3": "日曜日",
+        "option4": "水曜日",
+        "answer": 1,
+        "explanation": "지문 마지막에 '月曜日は休みです'라고 나와 있습니다.",
+        "difficulty": 4,
+        "recommendation_weight": 1.05
+      }
+    ]
+  }
+]

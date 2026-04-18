@@ -1,0 +1,152 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_02_set_01",
+    "content": "日本の 冬は とても さむいです。雪が たくさん ふります。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "日本の 冬は どうですか。",
+        "option1": "あたたかいです",
+        "option2": "さむいです",
+        "option3": "あついです",
+        "option4": "すずしいです",
+        "answer": 2,
+        "explanation": "지문에 '冬はとても寒いです'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "冬に なにが ふりますか。",
+        "option1": "あめ",
+        "option2": "ひょう",
+        "option3": "ゆき",
+        "option4": "あられ",
+        "answer": 3,
+        "explanation": "지문에 '雪がたくさん降ります'라고 나와 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_02_set_02",
+    "content": "田中さんの お父さんは エンジニアです。毎日 会社で コンピュータの 仕事を していますします。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "田中さんの お父さんの 仕事は なんですか。",
+        "option1": "先生",
+        "option2": "医者",
+        "option3": "エンジニア",
+        "option4": "看護師",
+        "answer": 3,
+        "explanation": "지문에서 '田中さんのお父さんはエンジニアです'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "お父さんは 毎日 どこで 仕事を していますか。",
+        "option1": "うち",
+        "option2": "会社",
+        "option3": "ぎゅうにゅう",
+        "option4": "がっこう",
+        "answer": 2,
+        "explanation": "지문에 '毎日 会社でコンピュータの仕事をしています'라고 명시되어 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_02_set_03",
+    "content": "明日は 私の 誕生日です。朝 両親が プレゼントを くれます。夜 友達が 来ます。楽しみです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "明日は なんですか。",
+        "option1": "友達の 誕生日",
+        "option2": "私の 誕生日",
+        "option3": "母の 誕生日",
+        "option4": "父の 誕生日",
+        "answer": 2,
+        "explanation": "지문에 '明日は私の誕生日です'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "朝 何が ありますか。",
+        "option1": "両親が プレゼントを くれます",
+        "option2": "学校へ いきます",
+        "option3": "ご飯を 食べます",
+        "option4": "勉強します",
+        "answer": 1,
+        "explanation": "지문에 '朝 両親がプレゼントをくれます'라고 나와 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_02_set_04",
+    "content": "私は 毎日 朝 7時に 起きます。7時30分に 朝ごはんを 食べます。そして バスで 学校へ 行きます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "私は 何時に 起きますか。",
+        "option1": "6時",
+        "option2": "7時",
+        "option3": "8時",
+        "option4": "9時",
+        "answer": 2,
+        "explanation": "지문에 '朝7時に起きます'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "朝ごはんを 食べるのは いつですか。",
+        "option1": "7時",
+        "option2": "7時15分",
+        "option3": "7時30分",
+        "option4": "8時",
+        "answer": 3,
+        "explanation": "지문에 '7時30分に朝ごはんを食べます'라고 나와 있다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_02_set_05",
+    "content": "その 店は 大きくて 新しいです。安い 野菜や 果物が たくさん あります。特に りんごは おいしいです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "その 店は どんな 店ですか。",
+        "option1": "小さくて 古い",
+        "option2": "大きくて 新しい",
+        "option3": "大きくて 古い",
+        "option4": "小さくて 新しい",
+        "answer": 2,
+        "explanation": "지문에 '大きくて新しいです'라고 명시되어 있다."
+      },
+      {
+        "blank_number": 2,
+        "question": "その 店では 何が 特に おいしいですか。",
+        "option1": "野菜",
+        "option2": "果物",
+        "option3": "りんご",
+        "option4": "みかん",
+        "answer": 3,
+        "explanation": "지문에 '特にりんごはおいしいです'라고 명시되어 있다."
+      }
+    ]
+  }
+]

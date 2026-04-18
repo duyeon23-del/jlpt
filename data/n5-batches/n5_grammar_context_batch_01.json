@@ -1,0 +1,252 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_01_set_01",
+    "content": "やまださんは まいあさ 6じに おきます。7じに あさごはんを たべて、7じ30ぷんに うちを でます。がっこうへは バスで いきます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "やまださんは まいあさ 6じに ____。",
+        "option1": "おきます",
+        "option2": "おきました",
+        "option3": "おきて",
+        "option4": "おきる",
+        "answer": 1,
+        "explanation": "지문에 まいあさ 6じに おきます 라고 있으므로 습관 표현인 おきます 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "あさごはんを ____ うちを でます。",
+        "option1": "たべる",
+        "option2": "たべて",
+        "option3": "たべます",
+        "option4": "たべた",
+        "answer": 2,
+        "explanation": "두 동작을 자연스럽게 잇기 위해 て형인 たべて 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "がっこうへは バス ____ いきます。",
+        "option1": "に",
+        "option2": "を",
+        "option3": "で",
+        "option4": "へ",
+        "answer": 3,
+        "explanation": "교통수단을 나타낼 때는 で를 사용한다."
+      },
+      {
+        "blank_number": 4,
+        "question": "7じ30ぷんに うちを ____。",
+        "option1": "でます",
+        "option2": "でました",
+        "option3": "でて",
+        "option4": "でる",
+        "answer": 1,
+        "explanation": "지문은 하루 일정 설명이므로 비과거 정중형 でます 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_01_set_02",
+    "content": "きのう さとうさんは ともだちと スーパーへ いきました。そこで りんごを 3つと ぎゅうにゅうを 1ほん かいました。うちへ かえってから、りんごを たべました。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "きのう さとうさんは ともだちと スーパーへ ____。",
+        "option1": "いきます",
+        "option2": "いきました",
+        "option3": "いって",
+        "option4": "いく",
+        "answer": 2,
+        "explanation": "きのう 가 있으므로 과거형 いきました 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "りんごを 3つ ____ かいました。",
+        "option1": "が",
+        "option2": "を",
+        "option3": "と",
+        "option4": "で",
+        "answer": 2,
+        "explanation": "직접 목적어에는 を를 사용한다."
+      },
+      {
+        "blank_number": 3,
+        "question": "ぎゅうにゅうを 1 ____ かいました。",
+        "option1": "まい",
+        "option2": "ほん",
+        "option3": "にん",
+        "option4": "さつ",
+        "answer": 2,
+        "explanation": "병이나 긴 물건 수량 표현에는 ほん을 사용한다."
+      },
+      {
+        "blank_number": 4,
+        "question": "うちへ かえってから、りんごを ____。",
+        "option1": "たべます",
+        "option2": "たべました",
+        "option3": "たべて",
+        "option4": "たべる",
+        "answer": 2,
+        "explanation": "지문 전체가 과거 상황이므로 たべました 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_01_set_03",
+    "content": "わたしの へやには つくえと いすが あります。つくえの うえには ほんが 2さつ あります。でも テレビは ありません。まどの そばに ねこが います。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "わたしの へやには つくえと いすが ____。",
+        "option1": "います",
+        "option2": "あります",
+        "option3": "いきます",
+        "option4": "みます",
+        "answer": 2,
+        "explanation": "つくえ와 いす는 무생물이므로 あります를 쓴다."
+      },
+      {
+        "blank_number": 2,
+        "question": "つくえの うえには ほんが 2 ____ あります。",
+        "option1": "にん",
+        "option2": "ほん",
+        "option3": "さつ",
+        "option4": "まい",
+        "answer": 3,
+        "explanation": "책의 수는 さつ를 사용한다."
+      },
+      {
+        "blank_number": 3,
+        "question": "テレビは ____。",
+        "option1": "あります",
+        "option2": "ありません",
+        "option3": "います",
+        "option4": "いません",
+        "answer": 2,
+        "explanation": "지문에 テレビは ありません 이라고 되어 있다."
+      },
+      {
+        "blank_number": 4,
+        "question": "まどの そばに ねこが ____。",
+        "option1": "あります",
+        "option2": "います",
+        "option3": "ありません",
+        "option4": "みます",
+        "answer": 2,
+        "explanation": "ねこ는 생물이므로 います가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_01_set_04",
+    "content": "たなかさんは きょう えきで 9じに ともだちに あいます。その あと、いっしょに えいがを みます。えいがの あとで レストランへ いって、ばんごはんを たべます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "たなかさんは えきで 9じに ともだちに ____。",
+        "option1": "あいます",
+        "option2": "ありました",
+        "option3": "あいて",
+        "option4": "あう",
+        "answer": 1,
+        "explanation": "오늘의 예정이므로 비과거 정중형 あいます 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "その あと、いっしょに えいがを ____。",
+        "option1": "ききます",
+        "option2": "みます",
+        "option3": "たべます",
+        "option4": "のります",
+        "answer": 2,
+        "explanation": "영화는 보다인 みます 를 사용한다."
+      },
+      {
+        "blank_number": 3,
+        "question": "えいがの あとで レストランへ ____。",
+        "option1": "いって",
+        "option2": "いきます",
+        "option3": "いきました",
+        "option4": "いく",
+        "answer": 1,
+        "explanation": "뒤의 동작과 연결되므로 て형인 いって 가 자연스럽다."
+      },
+      {
+        "blank_number": 4,
+        "question": "レストランで ばんごはんを ____。",
+        "option1": "たべます",
+        "option2": "のみます",
+        "option3": "みます",
+        "option4": "ききます",
+        "answer": 1,
+        "explanation": "ばんごはん은 저녁밥이므로 たべます 가 맞다."
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "문법",
+    "sub_type": "문맥",
+    "group_key": "n5_grammar_context_batch_01_set_05",
+    "content": "にちようびに かぞくで こうえんへ いきます。こうえんで しゃしんを とって、ジュースを のみます。ひるに うちへ かえって、みんなで ごはんを たべます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "にちようびに かぞくで こうえんへ ____。",
+        "option1": "いきます",
+        "option2": "いきました",
+        "option3": "いって",
+        "option4": "いく",
+        "answer": 1,
+        "explanation": "주말 계획을 말하는 문맥이므로 いきます 가 맞다."
+      },
+      {
+        "blank_number": 2,
+        "question": "こうえんで しゃしんを ____。",
+        "option1": "とります",
+        "option2": "のみます",
+        "option3": "いれます",
+        "option4": "おきます",
+        "answer": 1,
+        "explanation": "사진을 찍다는 しゃしんを とります 가 맞다."
+      },
+      {
+        "blank_number": 3,
+        "question": "ジュースを ____。",
+        "option1": "たべます",
+        "option2": "ききます",
+        "option3": "のみます",
+        "option4": "みます",
+        "answer": 3,
+        "explanation": "ジュース는 마시는 것이므로 のみます 가 맞다."
+      },
+      {
+        "blank_number": 4,
+        "question": "ひるに うちへ かえって、みんなで ごはんを ____。",
+        "option1": "たべます",
+        "option2": "のみます",
+        "option3": "かきます",
+        "option4": "あいます",
+        "answer": 1,
+        "explanation": "ごはん은 먹는 것이므로 たべます 가 맞다."
+      }
+    ]
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_05_set_01",
+    "difficulty": 1,
+    "recommendation_weight": 0.9,
+    "content": "わたしはかいしゃいんです。まいにち、でんしゃでしごとにいきます。しごとはたのしいです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "わたしは____です。",
+        "option1": "かいしゃいん",
+        "option2": "せんせい",
+        "option3": "がくせい",
+        "option4": "いしゃ",
+        "answer": 1,
+        "explanation": "지문 첫 문장에 'わたしはかいしゃいんです'라고 나와 있습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 2,
+        "question": "わたしはまいにち____でしごとにいきます。",
+        "option1": "でんしゃ",
+        "option2": "じてんしゃ",
+        "option3": "くるま",
+        "option4": "あるいて",
+        "answer": 1,
+        "explanation": "'まいにち、でんしゃでしごとにいきます'라는 부분에서 알 수 있습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 3,
+        "question": "わたしのしごとは____です。",
+        "option1": "たのしい",
+        "option2": "むずかしい",
+        "option3": "たいへん",
+        "option4": "つまらない",
+        "answer": 1,
+        "explanation": "마지막 문장에 'しごとはたのしいです'라고 나옵니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      },
+      {
+        "blank_number": 4,
+        "question": "このひとはまいにち____。",
+        "option1": "しごとにいきます",
+        "option2": "ともだちとあそびます",
+        "option3": "がっこうへいきます",
+        "option4": "いえにいます",
+        "answer": 1,
+        "explanation": "지문 전반부에서 매일 회사에 간다는 것을 알 수 있습니다.",
+        "difficulty": 1,
+        "recommendation_weight": 0.9
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_05_set_02",
+    "difficulty": 2,
+    "recommendation_weight": 1.05,
+    "content": "きのう、わたしはともだちとこうえんへいきました。あめがふっていましたが、たのしかったです。あとで、みんなでケーキをたべました。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "きのう、わたしはともだちと____へいきました。",
+        "option1": "こうえん",
+        "option2": "うみ",
+        "option3": "いえ",
+        "option4": "えき",
+        "answer": 1,
+        "explanation": "'ともだちとこうえんへいきました'라는 문장이 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 2,
+        "question": "そのひ、てんきは____でした。",
+        "option1": "あめ",
+        "option2": "はれ",
+        "option3": "ゆき",
+        "option4": "くもり",
+        "answer": 1,
+        "explanation": "'あめがふっていました'라는 문장에서 알 수 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 3,
+        "question": "こうえんで、わたしは____。",
+        "option1": "たのしかった",
+        "option2": "さびしかった",
+        "option3": "こわかった",
+        "option4": "つまらなかった",
+        "answer": 1,
+        "explanation": "지문에 'たのしかった' 라고 언급되어 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 4,
+        "question": "あとで、みんなで____をたべました。",
+        "option1": "ケーキ",
+        "option2": "りんご",
+        "option3": "パン",
+        "option4": "おにぎり",
+        "answer": 1,
+        "explanation": "'ケーキをたべました'가 마지막 문장에 나옵니다.",
+        "difficulty": 2,
+        "recommendation_weight": 1.05
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_05_set_03",
+    "difficulty": 2,
+    "recommendation_weight": 0.8,
+    "content": "あさごはんをたべて、がっこうにいきます。きょうはにちようびなので、がっこうはやすみです。わたしはうちでべんきょうします。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "わたしはあさごはんを____。",
+        "option1": "たべます",
+        "option2": "のみます",
+        "option3": "つくります",
+        "option4": "かいます",
+        "answer": 1,
+        "explanation": "지문에 'あさごはんをたべて'라고 나옵니다.",
+        "difficulty": 2,
+        "recommendation_weight": 0.8
+      },
+      {
+        "blank_number": 2,
+        "question": "きょうは____です。",
+        "option1": "にちようび",
+        "option2": "げつようび",
+        "option3": "かようび",
+        "option4": "きんようび",
+        "answer": 1,
+        "explanation": "'きょうはにちようびなので'에서 알 수 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 0.8
+      },
+      {
+        "blank_number": 3,
+        "question": "きょう、がっこうは____。",
+        "option1": "やすみ",
+        "option2": "あります",
+        "option3": "いきます",
+        "option4": "はじまります",
+        "answer": 1,
+        "explanation": "'がっこうはやすみです'라고 명시되어 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 0.8
+      },
+      {
+        "blank_number": 4,
+        "question": "わたしはうちで____します。",
+        "option1": "べんきょう",
+        "option2": "りょうり",
+        "option3": "さんぽ",
+        "option4": "そうじ",
+        "answer": 1,
+        "explanation": "'うちでべんきょうします'라는 정보가 있습니다.",
+        "difficulty": 2,
+        "recommendation_weight": 0.8
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_05_set_04",
+    "difficulty": 5,
+    "recommendation_weight": 1.25,
+    "content": "たなかさんはあかいくるまをもっています。まいしゅう、にちようびにやまへいきます。くるまのなかでおんがくをききながら、ドライブをたのしみます。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "たなかさんのくるまのいろは____です。",
+        "option1": "あかい",
+        "option2": "あおい",
+        "option3": "しろい",
+        "option4": "くろい",
+        "answer": 1,
+        "explanation": "'あかいくるまをもっています'라고 나와 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
+      },
+      {
+        "blank_number": 2,
+        "question": "たなかさんはまいしゅう、なにようびにやまへいきますか。____",
+        "option1": "にちようび",
+        "option2": "げつようび",
+        "option3": "すいようび",
+        "option4": "どようび",
+        "answer": 1,
+        "explanation": "'まいしゅう、にちようび'라고 지문에 언급되어 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
+      },
+      {
+        "blank_number": 3,
+        "question": "ドライブちゅう、たなかさんは____をききます。",
+        "option1": "おんがく",
+        "option2": "ラジオ",
+        "option3": "ニュース",
+        "option4": "テレビ",
+        "answer": 1,
+        "explanation": "'おんがくをききながら'라는 표현이 사용되었습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
+      },
+      {
+        "blank_number": 4,
+        "question": "たなかさんはドライブを____。",
+        "option1": "たのしみます",
+        "option2": "きらいます",
+        "option3": "やすみます",
+        "option4": "やめます",
+        "answer": 1,
+        "explanation": "마지막에 'ドライブをたのしみます'라고 적혀 있습니다.",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
+      }
+    ]
+  },
+  {
+    "record_type": "passage_set",
+    "level": "N5",
+    "major_type": "독해",
+    "sub_type": "단문독해",
+    "group_key": "n5_reading_short_batch_05_set_05",
+    "difficulty": 3,
+    "recommendation_weight": 1.15,
+    "content": "いもうとはせいがたかいです。まいあさ、ミルクをのみます。そして、サッカーがすきです。",
+    "questions": [
+      {
+        "blank_number": 1,
+        "question": "いもうとは____がたかいです。",
+        "option1": "せい",
+        "option2": "め",
+        "option3": "みみ",
+        "option4": "て",
+        "answer": 1,
+        "explanation": "처음 문장에서 'せいがたかいです'라고 적혀 있습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.15
+      },
+      {
+        "blank_number": 2,
+        "question": "いもうとはまいあさ、____をのみます。",
+        "option1": "ミルク",
+        "option2": "おちゃ",
+        "option3": "みず",
+        "option4": "コーヒー",
+        "answer": 1,
+        "explanation": "'まいあさ、ミルクをのみます' 부분이 해당 정보를 줍니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.15
+      },
+      {
+        "blank_number": 3,
+        "question": "いもうとは____がすきです。",
+        "option1": "サッカー",
+        "option2": "テニス",
+        "option3": "えいが",
+        "option4": "ほん",
+        "answer": 1,
+        "explanation": "'サッカーがすきです'라는 마지막 문장이 있습니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.15
+      },
+      {
+        "blank_number": 4,
+        "question": "いもうとはせいが____です。",
+        "option1": "たかい",
+        "option2": "ひくい",
+        "option3": "ながい",
+        "option4": "ちいさい",
+        "answer": 1,
+        "explanation": "높다는 의미의 'たかい'가 정답입니다.",
+        "difficulty": 3,
+        "recommendation_weight": 1.15
+      }
+    ]
+  }
+]

@@ -61,8 +61,8 @@ select
   q.type::text as major_type,
   coalesce(q.sub_type, '랜덤')::text as sub_type,
   r.skill_key,
-  r.difficulty,
-  r.recommendation_weight
+  coalesce(q.difficulty, r.difficulty),
+  coalesce(q.recommendation_weight, r.recommendation_weight)
 from public.questions q
 join public.question_skill_rules r
   on r.source_table = 'questions'
@@ -93,8 +93,8 @@ select
   pq.type::text as major_type,
   coalesce(pq.sub_type, '랜덤')::text as sub_type,
   r.skill_key,
-  r.difficulty,
-  r.recommendation_weight
+  coalesce(pq.difficulty, r.difficulty),
+  coalesce(pq.recommendation_weight, r.recommendation_weight)
 from public.passage_questions pq
 join public.question_skill_rules r
   on r.source_table = 'passage_questions'
@@ -125,8 +125,8 @@ select
   pq.type::text as major_type,
   coalesce(pq.sub_type, '문맥')::text as sub_type,
   r.skill_key,
-  r.difficulty,
-  r.recommendation_weight
+  coalesce(pq.difficulty, r.difficulty),
+  coalesce(pq.recommendation_weight, r.recommendation_weight)
 from public.passage_questions pq
 join public.question_skill_rules r
   on r.source_table = 'passage_questions'

@@ -18,7 +18,15 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
   }, [initialExamDate]);
 
   const handleSelectDate = async (nextExamDate) => {
-    if (!nextExamDate) return;
+    if (!nextExamDate || loading) return;
+
+    if (isEditing && initialExamDate && nextExamDate === initialExamDate) {
+      setSubmitError("");
+      if (onCancel) {
+        onCancel();
+      }
+      return;
+    }
 
     if (nextExamDate < todayLocal) {
       setSubmitError("시험일은 오늘 이후 날짜만 선택할 수 있습니다.");
@@ -62,18 +70,30 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
         </div>
 
         {/* 설명 */}
-        <div className="rounded-xl bg-blue-50 p-4 space-y-2 text-sm text-slate-700">
-          <p className="font-bold text-blue-700">
-            {isEditing ? "시험일을 변경하세요" : "시험일은 언제에요?"}
-          </p>
-          <p>
-            {isEditing
-              ? "시험일을 변경하시면 바로 풀어보기로 이동합니다."
-              : "날짜를 선택하면 바로 풀어보기로 이동합니다."}
-          </p>
-        </div>
+        {!isEditing && (
+          <div className="rounded-xl bg-blue-50 p-4 space-y-2 text-sm text-slate-700">
+            <p className="font-bold text-blue-700">시험일은 언제에요?</p>
+            <p>날짜를 선택하면 바로 풀어보기로 이동합니다.</p>
+          </div>
+        )}
 
         <div className="space-y-4">
+          {/* JLPT 급수 선택 (기본 N5, 추후 확장 대비) */}
+          <div className="space-y-2">
+            <label className="block text-sm font-bold text-slate-800">급수</label>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                className="rounded-full border border-amber-300 bg-amber-50 px-4 py-1 text-sm font-bold text-amber-700 cursor-default"
+                style={{ minWidth: 56 }}
+                tabIndex={-1}
+                aria-label="JLPT N5 (고정)"
+              >
+                N5
+              </button>
+              {/* 추후 N4~N1 확장 가능 */}
+            </div>
+          </div>
           <div className="space-y-2">
             <label className="block text-sm font-bold text-slate-800">
               시험일은 언제에요?
@@ -82,13 +102,15 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
               type="date"
               value={examDate}
               onChange={(e) => handleSelectDate(e.target.value)}
+              onBlur={() => {
+                if (isEditing && examDate && !loading) {
+                  handleSelectDate(examDate);
+                }
+              }}
               disabled={loading}
               min={todayLocal}
               className="w-full h-12 rounded-lg border border-slate-300 bg-white px-3 text-slate-900 font-semibold focus:outline-none focus:border-blue-500 disabled:bg-slate-100"
             />
-            <p className="text-xs text-slate-500">
-              {examDate && `${Math.ceil((new Date(examDate) - new Date()) / (1000 * 60 * 60 * 24))}일 남음`}
-            </p>
           </div>
 
           {submitError ? (
@@ -112,7 +134,7 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
                 onClick={onCancel}
                 className="min-h-[48px] rounded-xl border border-slate-300 bg-white text-slate-700 font-bold hover:bg-slate-50 transition active:scale-[0.99]"
               >
-                취소
+                돌아가기
               </button>
             </div>
           ) : (

@@ -7,14 +7,33 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:push": "supabase db push",
-    "db:apply:skill-rules": "node scripts/run-sql-file.mjs supabase/migrations/20260415120000_add_skill_rules_and_auto_backfill_map.sql",
-    "db:verify:skill-map": "node scripts/run-sql-file.mjs supabase/verify_skill_map_after_load.sql",
-    "db:push:verify": "supabase db push && node scripts/run-sql-file.mjs supabase/verify_skill_map_after_load.sql"
+    "db:guard:admin": "node scripts/require-admin-ops.mjs",
+    "db:check:secrets-tracked": "node scripts/check-no-tracked-secrets.mjs",
+    "db:push": "npm run db:guard:admin && supabase db push",
+    "db:backfill:skill-map": "npm run db:guard:admin && node scripts/backfill-skill-map.mjs",
+    "db:apply:skill-rules": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/migrations/20260415120000_add_skill_rules_and_auto_backfill_map.sql",
+    "db:verify:skill-map": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/verify_skill_map_after_load.sql",
+    "db:check:recommend": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/check_recommend_quality.sql",
+    "db:verify:dashboard-reset": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/verify_dashboard_reset_rpc.sql",
+    "db:report:recommend": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/reports/recommendation_validation_report.sql",
+    "db:report:recommend:export": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/reports/recommendation_validation_report.sql --out export/recommendation_validation_report.txt",
+    "snapshot:release-baseline": "node scripts/snapshot-release-baseline.mjs",
+    "db:gate:release": "node scripts/run-release-gate.mjs",
+    "db:test-seed:attempts": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/seeds/test/seed_test_attempts.sql",
+    "db:test-cleanup:attempts": "npm run db:guard:admin && chcp 65001>nul && node scripts/run-sql-file.mjs supabase/seeds/test/cleanup_test_attempts.sql",
+    "db:push:verify": "npm run db:push && npm run db:verify:skill-map",
+    "db:apply:n5-phase1": "node scripts/apply-n5-phase1.mjs",
+    "n5:validate": "node scripts/validate-n5-batch.mjs",
+    "n5:generate-sql": "node scripts/generate-n5-sql.mjs",
+    "n5:generate-batch": "node scripts/generate-batch-via-gpt.mjs",
+    "n5:sample:validate": "node scripts/validate-n5-batch.mjs data/n5-batches/sample-n5-batch.json",
+    "n5:sample:sql": "node scripts/generate-n5-sql.mjs data/n5-batches/sample-n5-batch.json supabase/templates/n5_sample_batch_generated.sql"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.103.0",
+    "@supabase/supabase-js": "^2.103.3",
+    "dotenv": "^17.4.2",
     "next": "16.2.3",
+    "openai": "^6.34.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -22,6 +41,7 @@
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
+    "supabase": "^2.91.2",
     "tailwindcss": "^4"
   }
 }

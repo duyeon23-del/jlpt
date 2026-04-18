@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JLPT App
 
-## Getting Started
+Next.js + Supabase 기반 JLPT 연습 앱입니다.
 
-First, run the development server:
+## 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 `http://localhost:3000` 접속.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 필수 환경 변수
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_DB_URL` (SQL 스크립트 실행용)
+- `SUPABASE_SERVICE_ROLE_KEY` (관리자 DB 작업용)
+- `ADMIN_DB_OPS=1` (관리자 DB 작업 실행 스위치)
 
-## Learn More
+`.env.local` 또는 `.env`에 설정합니다.
 
-To learn more about Next.js, take a look at the following resources:
+## 주요 명령어
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 앱
+	- `npm run dev`
+	- `npm run build`
+	- `npm run lint`
+- DB
+	- `npm run db:push`
+	- `npm run db:backfill:skill-map`
+	- `npm run db:gate:release`
+	- `npm run db:push:verify`
+	- `npm run db:verify:skill-map`
+	- `npm run db:verify:dashboard-reset`
+	- `npm run db:check:recommend`
+	- `npm run db:report:recommend`
+	- `npm run db:test-seed:attempts`
+	- `npm run db:test-cleanup:attempts`
+	- `npm run db:check:secrets-tracked`
+- N5 데이터
+	- `npm run n5:validate`
+	- `npm run n5:generate-sql`
+	- `npm run db:apply:n5-phase1`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 최근 운영 변경
 
-## Deploy on Vercel
+- 대시보드 초기화는 `reset_user_learning_data` RPC 우선 호출(원자 작업)로 동작.
+- RPC 미적용 환경은 클라이언트 레거시 경로로 자동 fallback.
+- 추천 품질 체크 SQL에 중복/유형 분포 점검 항목 추가.
+- 릴리즈 전 통합 DB 게이트는 `npm run db:gate:release`로 실행.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 운영 런북
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 대시보드 리셋/추천 검증:
+	- `docs/operations/01-dashboard-reset-and-recommendation-runbook.md`
+- 비밀키/권한 정책:
+	- `docs/operations/02-secrets-and-access-policy.md`
+- 릴리즈 기준선:
+	- `docs/operations/03-db-release-baseline-2026-04-18.md`
+- 장애 대응 플레이북:
+	- `docs/operations/04-db-ops-failure-playbook.md`
+
+## 관련 문서
+
+- 문제은행 워크플로우: `docs/n5-problem-bank/`
