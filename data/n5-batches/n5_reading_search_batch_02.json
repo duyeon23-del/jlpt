@@ -5,37 +5,57 @@
     "major_type": "독해",
     "sub_type": "정보검색",
     "group_key": "n5_reading_search_batch_02_set_01",
-    "content": "とうきょう えきは JR、メトロ、私鉄など 様々な路線が通っています。毎日 たくさんの人が利用しています。えきの南口には ビジネス街が あります。北口には デパートやレストランが あります。",
+    "difficulty": 4,
+    "recommendation_weight": 1.15,
+    "content": "こちらは田中さんの一日（いちにち）のよていです。午前7時におきます。午前8時に朝ごはんを食べます。午後3時にともだちとこうえんへ行きます。午後10時にねます。",
     "questions": [
       {
         "blank_number": 1,
-        "question": "東京駅の 北口の 近くには 何がありますか。",
-        "option1": "ビジネス街",
-        "option2": "デパートやレストラン",
-        "option3": "病院",
-        "option4": "学校",
-        "answer": 2,
-        "explanation": "지문에 '北口にはデパートやレストランがあります'라고 명시되어 있다."
+        "question": "田中さんは何時におきますか。____",
+        "option1": "午前7時",
+        "option2": "午前8時",
+        "option3": "午後3時",
+        "option4": "午後10時",
+        "answer": 1,
+        "explanation": "文の最初に『午前7時におきます』と書いてあります。",
+        "difficulty": 2,
+        "recommendation_weight": 0.9
       },
       {
         "blank_number": 2,
-        "question": "東京駅を 利用しているのは いつですか。",
-        "option1": "朝だけ",
-        "option2": "夜だけ",
-        "option3": "毎日",
-        "option4": "週末だけ",
-        "answer": 3,
-        "explanation": "지문에 '毎日たくさんの人が利用しています'라고 명시되어 있다."
+        "question": "田中さんはどこへ行きますか。____",
+        "option1": "こうえん",
+        "option2": "がっこう",
+        "option3": "いえ",
+        "option4": "えき",
+        "answer": 1,
+        "explanation": "午後3時に『こうえんへ行きます』とあります。",
+        "difficulty": 4,
+        "recommendation_weight": 1.1
       },
       {
         "blank_number": 3,
-        "question": "東京駅の 南口の 近くには 何がありますか。",
-        "option1": "ビジネス街",
-        "option2": "デパート",
-        "option3": "遊園地",
-        "option4": "公園",
+        "question": "田中さんは何時に朝ごはんを食べますか。____",
+        "option1": "午前8時",
+        "option2": "午前7時",
+        "option3": "午後3時",
+        "option4": "午後10時",
         "answer": 1,
-        "explanation": "지문에 '南口にはビジネス街があります'라고 명시되어 있다."
+        "explanation": "『午前8時に朝ごはんを食べます』とあります。",
+        "difficulty": 3,
+        "recommendation_weight": 1.05
+      },
+      {
+        "blank_number": 4,
+        "question": "田中さんは午後10時に何をしますか。____",
+        "option1": "ねます",
+        "option2": "おきます",
+        "option3": "べんきょうします",
+        "option4": "ともだちとあそびます",
+        "answer": 1,
+        "explanation": "『午後10時にねます』と書かれています。",
+        "difficulty": 4,
+        "recommendation_weight": 1.15
       }
     ]
   },
@@ -45,117 +65,57 @@
     "major_type": "독해",
     "sub_type": "정보검색",
     "group_key": "n5_reading_search_batch_02_set_02",
-    "content": "カフェ「さくら」の営業時間は 平日 午前7時から午後9時、土日 午前8時から 午後 10時です。朝食、ランチ、ディナーすべて 提供しています。WiFiが あるので、仕事や 勉強に 使われています。",
+    "difficulty": 4,
+    "recommendation_weight": 1.05,
+    "content": "スーパーは毎日午前9時から午後8時までです。日曜日は午前10時に開きます。土曜日と日曜日はやすみのスーパーもあります。",
     "questions": [
       {
         "blank_number": 1,
-        "question": "カフェ「さくら」は 平日 何時に 閉まりますか。",
-        "option1": "午後7時",
-        "option2": "午後8時",
-        "option3": "午後9時",
-        "option4": "午後10時",
-        "answer": 3,
-        "explanation": "지문에 '平日午前7時から午後9時'라고 명시되어 있다."
-      },
-      {
-        "blank_number": 2,
-        "question": "カフェ「さくら」では 何が 提供されていますか。",
-        "option1": "朝食とランチだけ",
-        "option2": "ランチとディナーだけ",
-        "option3": "朝食、ランチ、ディナーすべて",
-        "option4": "夜食だけ",
-        "answer": 3,
-        "explanation": "지문에 '朝食、ランチ、ディナーすべて提供しています'라고 명시되어 있다."
-      },
-      {
-        "blank_number": 3,
-        "question": "カフェ「さくら」で 人気がある のは なぜですか。",
-        "option1": "安い",
-        "option2": "WiFiがあるから",
-        "option3": "おいしい",
-        "option4": "有名だから",
-        "answer": 2,
-        "explanation": "지문에 'WiFiがあるので、仕事や勉強に使われています'라고 나와 있다."
-      }
-    ]
-  },
-  {
-    "record_type": "passage_set",
-    "level": "N5",
-    "major_type": "독해",
-    "sub_type": "정보검색",
-    "group_key": "n5_reading_search_batch_02_set_03",
-    "content": "図書館の蔵書は 約10万冊です。雑誌、新聞も 多くあります。自習室もあり、学生が よく勉強しています。開館時間は 月曜から 金曜 午前9時から 午後8時、土日 午前10時から 午後6時です。",
-    "questions": [
-      {
-        "blank_number": 1,
-        "question": "図書館の 蔵書数は どのくらいですか。",
-        "option1": "約1万冊",
-        "option2": "約5万冊",
-        "option3": "約10万冊",
-        "option4": "約20万冊",
-        "answer": 3,
-        "explanation": "지문에 '蔵書は約10万冊です'라고 명시되어 있다."
-      },
-      {
-        "blank_number": 2,
-        "question": "図書館には 何が ありますか。",
-        "option1": "本だけ",
-        "option2": "本と雑誌",
-        "option3": "本、雑誌、新聞、自習室",
-        "option4": "カフェと本",
-        "answer": 3,
-        "explanation": "지문에 '雑誌、新聞も多くあります。自習室もあり'라고 나와 있다."
-      },
-      {
-        "blank_number": 3,
-        "question": "図書館は 土曜 何時に 閉まりますか。",
-        "option1": "午後4時",
-        "option2": "午後6時",
+        "question": "平日はスーパーはいつから開いていますか。____",
+        "option1": "午前9時",
+        "option2": "午前10時",
         "option3": "午後8時",
-        "option4": "午後10時",
-        "answer": 2,
-        "explanation": "지문에 '土日午前10時から午後6時'라고 명시되어 있다."
-      }
-    ]
-  },
-  {
-    "record_type": "passage_set",
-    "level": "N5",
-    "major_type": "독해",
-    "sub_type": "정보검색",
-    "group_key": "n5_reading_search_batch_02_set_04",
-    "content": "ホテル「ガーデン」は 新宿駅から 徒歩 5分です。シングルルームが 1グラウンド 500円、ダブルルームが 1泊 7000円です。朝食は 6時から 10時まで レストランで 提供されています。駐車場も あります。",
-    "questions": [
-      {
-        "blank_number": 1,
-        "question": "ホテル「ガーデン」は 新宿駅から どのくらいの距離ですか。",
-        "option1": "徒歩 3分",
-        "option2": "徒歩 5分",
-        "option3": "徒歩 10分",
-        "option4": "徒歩 15分",
-        "answer": 2,
-        "explanation": "지문에 '新宿駅から徒歩5分'라고 명시되어 있다."
+        "option4": "午後9時",
+        "answer": 1,
+        "explanation": "『毎日午前9時から午後8時まで』とあります。平日は午前9時に開きます。",
+        "difficulty": 3,
+        "recommendation_weight": 1
       },
       {
         "blank_number": 2,
-        "question": "ダブルルーム の 1泊の 値段は 幾らですか。",
-        "option1": "5000円",
-        "option2": "6000円",
-        "option3": "7000円",
-        "option4": "8000円",
-        "answer": 3,
-        "explanation": "지문에 'ダブルルームが1泊7000円'라고 명시되어 있다."
+        "question": "スーパーは日曜日に何時に開きますか。____",
+        "option1": "午前10時",
+        "option2": "午前9時",
+        "option3": "午後8時",
+        "option4": "午後7時",
+        "answer": 1,
+        "explanation": "『日曜日は午前10時に開きます』と書かれています。",
+        "difficulty": 4,
+        "recommendation_weight": 1.05
       },
       {
         "blank_number": 3,
-        "question": "朝食は 何時から 何時まで 提供されていますか。",
-        "option1": "5時から 9時",
-        "option2": "6時から 10時",
-        "option3": "7時から 11時",
-        "option4": "8時から 12時",
-        "answer": 2,
-        "explanation": "지문에 '朝食は6時から10時まで'라고 명시되어 있다."
+        "question": "スーパーは午後何時までですか。____",
+        "option1": "午後8時",
+        "option2": "午後9時",
+        "option3": "午後7時",
+        "option4": "午後6時",
+        "answer": 1,
+        "explanation": "全ての日に『午後8時まで』とあります。",
+        "difficulty": 2,
+        "recommendation_weight": 0.8
+      },
+      {
+        "blank_number": 4,
+        "question": "土曜日と日曜日はどうですか。____",
+        "option1": "やすみのスーパーもある",
+        "option2": "いつもひらいている",
+        "option3": "午後12時にしめる",
+        "option4": "朝しかひらかない",
+        "answer": 1,
+        "explanation": "最後の文に『やすみのスーパーもあります』と書いてあります。",
+        "difficulty": 5,
+        "recommendation_weight": 1.25
       }
     ]
   }

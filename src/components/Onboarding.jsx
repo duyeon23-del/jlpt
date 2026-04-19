@@ -20,14 +20,6 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
   const handleSelectDate = async (nextExamDate) => {
     if (!nextExamDate || loading) return;
 
-    if (isEditing && initialExamDate && nextExamDate === initialExamDate) {
-      setSubmitError("");
-      if (onCancel) {
-        onCancel();
-      }
-      return;
-    }
-
     if (nextExamDate < todayLocal) {
       setSubmitError("시험일은 오늘 이후 날짜만 선택할 수 있습니다.");
       return;
@@ -36,6 +28,7 @@ export default function Onboarding({ onComplete, onNoExam, errorMessage, isEditi
     setExamDate(nextExamDate);
     setSubmitError("");
     setLoading(true);
+    // 동일 날짜 선택도 항상 onComplete 호출 (페이지 복귀 보장)
     const success = await onComplete(nextExamDate);
     setLoading(false);
 

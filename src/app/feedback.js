@@ -59,6 +59,8 @@ export default function FeedbackPage() {
           upsert: false,
         });
       if (uploadError) {
+        console.error(uploadError); // 실제 에러 메시지 콘솔 출력
+        alert("[업로드 에러] " + (uploadError.message || uploadError.error_description || JSON.stringify(uploadError)));
         setStatus("이미지 업로드에 실패했습니다. 다시 시도해 주세요.");
         setLoading(false);
         return;

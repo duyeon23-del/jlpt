@@ -1196,7 +1196,7 @@ export default function Home() {
         if (!data) {
           let passagesQuery = supabase
             .from("passages")
-            .select("id, group_id, content, level, type, sub_type, created_at")
+            .select("*")
             .eq("type", activeType);
 
           if (activeSubType !== "랜덤") {
@@ -1204,12 +1204,13 @@ export default function Home() {
           }
 
           const passagesResult = await passagesQuery;
+          console.log("[DEBUG] passagesResult", passagesResult);
 
           if (!passagesResult.error && passagesResult.data) {
             const groupIds = [...new Set(passagesResult.data.map((item) => item.group_id).filter(Boolean))];
             let questionsQuery = supabase
               .from("passage_questions")
-              .select("id, group_id, type, sub_type, question, blank_number, option1, option2, option3, option4, answer, explanation, created_at")
+              .select("*")
               .in("group_id", groupIds)
               .eq("type", activeType)
               .order("blank_number", { ascending: true });
@@ -1221,6 +1222,7 @@ export default function Home() {
             const { data: questionData } = groupIds.length
               ? await questionsQuery
               : { data: [] };
+            console.log("[DEBUG] passage_questions data", questionData);
 
             const questionsByGroup = (questionData || []).reduce((acc, item) => {
               const key = getPassageQuestionJoinKey(item.group_id, item.type, item.sub_type);
